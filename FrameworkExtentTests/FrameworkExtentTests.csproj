@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ExtentReports" Version="4.0.3" />
+        <PackageReference Include="nunit" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Resources\Extent.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Resources\html-config.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
